@@ -35,5 +35,13 @@ namespace AdventOfCode2024.Day1
 
             return new Locations(leftLocations, rightLocations);
         }
+
+        public Locations LoadLocalFileData(string fileName)
+        {
+            var projectFolderName = "Day1";
+            var filePath = $"DataFiles/{fileName}";
+            var fileTestPath = $"{Directory.GetCurrentDirectory()}/{projectFolderName}/{filePath}";
+            return LoadData(fileTestPath);
+        }
     }
 }

@@ -31,5 +31,18 @@ namespace AdventOfCode2024.Day1
 
             return totalDistance;
         }
+
+        public int GetTotalSimilarity()
+        {
+            var similarity = 0;
+            foreach (var leftLocation in LeftLocations)
+            {
+                var leftAppearingOnRightCount = RightLocations.Count(x => x == leftLocation);
+
+                similarity += leftLocation * leftAppearingOnRightCount;
+            }
+
+            return similarity;
+        }
     }
 }

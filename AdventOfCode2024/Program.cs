@@ -3,9 +3,9 @@
 using AdventOfCode2024.Day1;
 
 var dataLoader = new DataLoader();
-var projectFolderName = "Day1";
-var filePath = "DataFiles/1 - input.txt";
-var fileTestPath = $"{Directory.GetCurrentDirectory()}/{projectFolderName}/{filePath}";
-var locations = dataLoader.LoadData(fileTestPath);
-Console.WriteLine($"Day 1 result. Total distances: {locations.GetTotalDistance()}");
+var locations1 = dataLoader.LoadLocalFileData("1 - input.txt");
+Console.WriteLine($"Day 1, part 1 results. Total distances: {locations1.GetTotalDistance()}");
+
+var locations2 = dataLoader.LoadLocalFileData("2 - input.txt");
+Console.WriteLine($"Day 1, part 2 results. Total similarity: {locations2.GetTotalSimilarity()}");
 Console.ReadKey();
