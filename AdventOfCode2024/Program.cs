@@ -14,8 +14,12 @@ Console.WriteLine($"Part 2. Total similarity: {locations2.GetTotalSimilarity()}"
 
 Console.WriteLine("--== DAY 2 ==--");
 var day2DataLoader = new Day2DataLoader();
-var reports = day2DataLoader.LoadLocalFileData("Day 2 - 1 - input.txt");
-var safeLevels = reports.Count(x => x.IsSafe());
-Console.WriteLine($"Part 1. Total safe levels: {safeLevels}");
+var reports1 = day2DataLoader.LoadLocalFileData("Day 2 - 1 - input.txt");
+var safeLevels1 = reports1.Count(x => x.IsSafe());
+Console.WriteLine($"Part 1. Total safe levels: {safeLevels1}");
+
+var reports2 = day2DataLoader.LoadLocalFileData("Day 2 - 2 - input.txt");
+var safeLevels2 = reports2.Count(x => x.IsSafeWithoutOneLevel());
+Console.WriteLine($"Part 1. Total safe levels: {safeLevels2}");
 
 Console.ReadKey();

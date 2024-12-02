@@ -75,5 +75,27 @@ namespace AdventOfCode2024.Tests.Day2
 
             Assert.False(report.IsSafe());
         }
+
+        [Theory]
+        [InlineData(7, 6, 4, 2, 1)]
+        [InlineData(1, 3, 2, 4, 5)]
+        [InlineData(8, 6, 4, 4, 1)]
+        [InlineData(1, 3, 6, 7, 9)]
+        public void Should_BeSafeWithoutOneLevel(params int[] levels)
+        {
+            var report = new Report(levels.ToList());
+
+            Assert.True(report.IsSafeWithoutOneLevel());
+        }
+
+        [Theory]
+        [InlineData(1, 2, 7, 8, 9)]
+        [InlineData(9, 7, 6, 2, 1)]
+        public void Should_BeUnsafeWithoutOneLevel(params int[] levels)
+        {
+            var report = new Report(levels.ToList());
+
+            Assert.False(report.IsSafeWithoutOneLevel());
+        }
     }
 }
