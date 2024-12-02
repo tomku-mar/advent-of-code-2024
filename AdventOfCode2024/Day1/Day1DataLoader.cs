@@ -1,10 +1,6 @@
-// <copyright file="DataLodader.cs" company="Equiniti">
-// Copyright (c) Equiniti 2022. All Rights Reserved
-// </copyright>
-
 namespace AdventOfCode2024.Day1
 {
-    public class DataLoader
+    public class Day1DataLoader
     {
         public Locations LoadData(string filePath)
         {

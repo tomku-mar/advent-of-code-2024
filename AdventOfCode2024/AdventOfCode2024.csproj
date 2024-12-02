@@ -9,6 +9,7 @@
 
     <ItemGroup>
       <Folder Include="Day1\DataFiles\" />
+      <Folder Include="Day2\DataFiles\" />
     </ItemGroup>
 
     <ItemGroup>
@@ -18,6 +19,10 @@
       </EmbeddedResource>
       <None Remove="Day1\DataFiles\2 - input.txt" />
       <EmbeddedResource Include="Day1\DataFiles\2 - input.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Day2\DataFiles\Day 2 - 1 - input.txt" />
+      <EmbeddedResource Include="Day2\DataFiles\Day 2 - 1 - input.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </EmbeddedResource>
     </ItemGroup>

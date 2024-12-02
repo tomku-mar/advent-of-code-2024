@@ -1,12 +1,8 @@
-// <copyright file="DataLoaderTests.cs" company="Equiniti">
-// Copyright (c) Equiniti 2022. All Rights Reserved
-// </copyright>
-
 namespace AdventOfCode2024.Tests.Day1
 {
     using AdventOfCode2024.Day1;
 
-    public class DataLoaderTests
+    public class Day1DataLoaderTests
     {
         [Theory]
         [InlineData("DataFiles/1 - example input1.txt", 11)]
@@ -16,7 +12,7 @@ namespace AdventOfCode2024.Tests.Day1
         {
             var projectFolderName = "Day1";
             var fileTestPath = $"{Directory.GetCurrentDirectory()}/{projectFolderName}/{filePath}";
-            var dataLoader = new DataLoader();
+            var dataLoader = new Day1DataLoader();
             var locations = dataLoader.LoadData(fileTestPath);
 
             Assert.True(expectedTotalDistance == locations.GetTotalDistance());

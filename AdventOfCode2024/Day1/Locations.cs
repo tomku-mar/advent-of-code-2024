@@ -1,7 +1,3 @@
-// <copyright file="Locations.cs" company="Equiniti">
-// Copyright (c) Equiniti 2022. All Rights Reserved
-// </copyright>
-
 namespace AdventOfCode2024.Day1
 {
     public class Locations

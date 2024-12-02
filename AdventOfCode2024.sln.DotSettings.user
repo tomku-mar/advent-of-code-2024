@@ -3,5 +3,7 @@
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::C4DB3A58-CF2F-4E71-9B3E-8B37827B053A::net8.0::AdventOfCode2024.Tests.Day1.LocationsTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::C4DB3A58-CF2F-4E71-9B3E-8B37827B053A::net8.0::AdventOfCode2024.Tests.Day1.DataLoaderTests.Should_CalculateTotalDistanceFromFileData&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::C4DB3A58-CF2F-4E71-9B3E-8B37827B053A::net8.0::AdventOfCode2024.Tests.Day2.ReportTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::C4DB3A58-CF2F-4E71-9B3E-8B37827B053A::net8.0::AdventOfCode2024.Tests.Day2.Day2DataLoaderTests.Should_CalculateTotalDistanceFromFileData&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
